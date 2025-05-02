@@ -24,7 +24,7 @@ int main()
 	cout.tie(NULL);
 	cin.tie(NULL);
 
-	for (int i = 0; i < 28; i++) 
+	for (int i = 0; i < 28; ++i) 
 	{
 		cin >> a;
 		arr[a] = 1;
