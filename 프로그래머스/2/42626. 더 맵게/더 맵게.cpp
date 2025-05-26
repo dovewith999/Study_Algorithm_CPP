@@ -7,8 +7,6 @@ using namespace std;
 
 int solution(vector<int> scoville, int K) {
     int answer = 0;
-
-    sort(scoville.begin(), scoville.end());
     
     priority_queue<int, vector<int>, greater<int>> pq(scoville.begin(), scoville.end());
 
@@ -25,9 +23,7 @@ int solution(vector<int> scoville, int K) {
     }
     
     if(pq.top() < K)
-    {
         answer = -1;
-    }
     
     return answer;
 }
