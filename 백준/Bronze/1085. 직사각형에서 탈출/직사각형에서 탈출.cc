@@ -4,15 +4,14 @@ using namespace std;
 
 int x, y, w, h;
 
-
 int solution()
 {
 	int answer = 0;
 
-	answer = x - 0;
+	answer = x;
 
-	if(answer > y - 0)
-		answer = y - 0;
+	if(answer > y)
+		answer = y;
 
 	if(answer > w - x)
 		answer = w - x;
