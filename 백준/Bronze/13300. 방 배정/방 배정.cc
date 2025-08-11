@@ -25,8 +25,8 @@ int main()
 
 		++arr[gender][grade];
 
-		if (arr[gender][grade] == 2)
-			arr[gender][grade] = 0;
+		if (arr[gender][grade] >= K)
+			arr[gender][grade] %= K;
 	}
 
 	cout << cnt << '\n';
