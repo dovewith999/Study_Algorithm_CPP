@@ -1,12 +1,12 @@
 #include <string>
 #include <vector>
-#include <set>
+#include <unordered_set>
 
 using namespace std;
 
 int solution(vector<int> elements){
     int answer = 0;
-    set<int> seq;
+    unordered_set<int> seq;
     
     for(int i = 0; i < elements.size(); ++i) 
     {
